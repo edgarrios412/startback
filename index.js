@@ -17,3 +17,7 @@ cron.schedule("*/10 * * * *", async () => {
     await axios.get("https://fideliza-back.onrender.com/user/")
     console.log("Peticiones realizadas")
 })
+
+app.listen(3001, () => {
+    console.log("Servidor en linea en el puerto 3001")
+})
